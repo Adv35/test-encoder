@@ -1,3 +1,4 @@
+let list: number[] = []
 OrientBit.enableEncoder(
 DigitalPin.P0,
 DigitalPin.P1,
@@ -20,4 +21,5 @@ basic.forever(function () {
     1
     )
     basic.pause(100)
+    list = OrientBit.getRotationCount()
 })
